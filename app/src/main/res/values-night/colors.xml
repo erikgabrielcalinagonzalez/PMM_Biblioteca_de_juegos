@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.BibliotecaDeJuegos" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">@color/gris_oscuro</item>
+        <item name="colorOnPrimary">@color/azul_grisaceo</item>
+        <item name="colorPrimaryContainer">@color/azul_claro_gris</item>
+        <item name="colorOnPrimaryContainer">@color/azul_oscuro_gris</item>
+    </style>
+
+    <style name="Theme.BibliotecaDeJuegos" parent="Base.Theme.BibliotecaDeJuegos" />
+</resources>

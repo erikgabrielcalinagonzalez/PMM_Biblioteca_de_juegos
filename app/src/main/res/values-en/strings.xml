@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="en">
+    <string name="app_name">Games library</string>
+
+    <string name="titulo_formulario">New game</string>
+    <string name="titulo_detalle">Game details</string>
+
+    <string-array name="generos">
+        <item>Action</item>
+        <item>Adventure</item>
+        <item>Fantasy</item>
+        <item>Horror</item>
+        <item>Others</item>
+    </string-array>
+
+    <string name="detalle_genero">Genre: %1$s</string>
+
+
+
+</resources>

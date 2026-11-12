@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blanco">#FFFFFFFF</color>
+    <color name="azul">#0031FF</color>
+    <color name="azul_muy_claro">#C4D0FF</color>
+    <color name="azul_muy_oscuro">#001675</color>
+
+    <color name="gris_oscuro">#292929</color>
+    <color name="azul_grisaceo">#363861</color>
+    <color name="azul_claro_gris">#42425C</color>
+    <color name="azul_oscuro_gris">#16162E</color>
+
+
+    <style name="Base.Theme.BibliotecaDeJuegos" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">@color/azul</item>
+        <item name="colorOnPrimary">@color/blanco</item>
+        <item name="colorPrimaryContainer">@color/azul_muy_claro</item>
+        <item name="colorOnPrimaryContainer">@color/azul_muy_oscuro</item>
+    </style>
+
+    <style name="Theme.BibliotecaDeJuegos" parent="Base.Theme.BibliotecaDeJuegos" />
+</resources>
