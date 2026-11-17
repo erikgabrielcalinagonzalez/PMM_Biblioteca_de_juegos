@@ -15,6 +15,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width=""
+        android:layout_height="">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
    <ImageView
        android:id="@+id/imagen_portada"

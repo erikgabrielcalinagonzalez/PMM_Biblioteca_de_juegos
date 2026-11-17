@@ -2,3 +2,8 @@
 plugins {
     alias(libs.plugins.android.application) apply false
 }
+buildFeatures {
+    viewBinding = true
+}
+// en dependencies:
+implementation(libs.androidx.recyclerview)

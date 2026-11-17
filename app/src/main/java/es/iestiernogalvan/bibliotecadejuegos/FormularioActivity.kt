@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class ActivityFormulario : AppCompatActivity() {
+class FormularioActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityFormularioBinding
 
