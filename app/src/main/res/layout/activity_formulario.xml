@@ -1,81 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".FormularioActivity">
 
-
-
-    <ScrollView
-        android:id="@+id/main"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-
-
-
-        <LinearLayout
+        <EditText
+            android:id="@+id/edit_titulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:hint="@string/hint_titulo_juego"
+            android:inputType="textCapSentences"
+            android:minHeight="48dp" />
 
-            <TextView
-                android:id="@+id/textView6"
+
+        <EditText
+            android:id="@+id/titulo_desarolladora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dev_juego"
+            android:inputType="textCapSentences"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="@string/titulo_generos" />
+
+        <Spinner
+            android:id="@+id/spinner_genero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/generos"
+            android:minHeight="48dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="@string/formato_juego" />
+        <RadioGroup
+            android:id="@+id/grupo_formato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/radio_fisico">
+            <RadioButton
+                android:id="@+id/radio_fisico"
                 android:layout_width="wrap_content"
-                android:layout_height="25dp"
-                android:text="@string/titulo_formulario" />
-
-            <EditText
-                android:id="@+id/edit_titulo"
+                android:layout_height="wrap_content"
+                android:text="@string/formato_op1" />
+            <RadioButton
+                android:id="@+id/radio_digital"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="nombre juego"
-                android:inputType="textCapSentences"
-                android:minHeight="48dp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
-                android:text="@string/titulo_detalle" />
-            <Spinner
-                android:id="@+id/spinner_genero"
+                android:text="@string/formato_op2" />
+            <RadioButton
+                android:id="@+id/radio_realidad_virtual"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:entries="@array/generos"
-                android:minHeight="48dp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/formato_juego" />
-            <RadioGroup
-                android:id="@+id/grupo_formato"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:checkedButton="@id/radio_papel">
-                <RadioButton
-                    android:id="@+id/radio_papel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="papel" />
-
-                <RadioButton
-                    android:id="@+id/radio2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="RadioButton" />
-                <RadioButton
-                    android:id="@+id/radio3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="RadioButton" />
-
+                android:text="@string/formato_op3" />
 
             </RadioGroup>
         <CheckBox
-            android:id="@+id/check_leido"
+            android:id="@+id/check_jugado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Prueba" />
+            android:text="@string/form_chek_jugado" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -91,7 +89,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:text="cancelar" />
+                    android:text="@string/boton_cancelar" />
 
                 <Button
                     android:id="@+id/boton_guardar"
@@ -99,12 +97,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_weight="1"
-                    android:text="guardar" />
+                    android:text="@string/boton_guardar" />
             </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
-
-    <androidx.constraintlayout.helper.widget.Layer android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,7 +2,8 @@
     <string name="app_name">Biblioteca de Juegos</string>
 
     <string name="titulo_formulario">Nuevo juego</string>
-    <string name="titulo_detalle">Detalle del juego</string>
+    <string name="hint_titulo_juego">Nombre juego</string>
+    <string name="dev_juego">Desarrolladora</string>
 
     <string-array name="generos">
         <item>Acción</item>
@@ -13,9 +14,16 @@
     </string-array>
 
     <string name="detalle_genero">Género: %1$s</string>
-    <string name="formato_juego">Formato de juego</string>
-    <string name="formato_op1">Formato de juego</string>
 
+    <string name="formato_juego">Formato de juego</string>
+    <string name="formato_op1">Físico</string>
+    <string name="formato_op2">Digital</string>
+    <string name="formato_op3">Realidad Virtual</string>
+    <string name="titulo_generos">Genero</string>
+    <string name="form_chek_jugado">Jugado</string>
+    <string name="boton_cancelar">Cancelar</string>
+    <string name="boton_guardar">Guardar</string>
+    <string name="anadir_juego">Añadir juego</string>
 
 
 </resources>

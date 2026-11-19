@@ -14,7 +14,7 @@
         <activity
             android:name=".DetalleActivity"
             android:exported="false"
-            android:label="@string/titulo_detalle" />
+            android:label="@string/dev_juego" />
         <activity
             android:name=".FormularioActivity"
             android:exported="false"
