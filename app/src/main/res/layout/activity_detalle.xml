@@ -8,32 +8,39 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imagen_portada"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_game" />
+        app:srcCompat="@drawable/ic_launcher_game"
+        app:tint="?attr/colorPrimary"/>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/texto_titulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagen_portada"
+        tools:text="Call of Duty" />
+
+    <TextView
+        android:id="@+id/desarrolladora_juego"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView"
-        android:text="TextView" />
+        app:layout_constraintTop_toBottomOf="@id/texto_titulo"
+        tools:text="TextView" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,7 +48,7 @@
         android:layout_margin="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text2"
+        app:layout_constraintTop_toBottomOf="@id/desarrolladora_juego"
         android:orientation="vertical">
 
         <TextView
@@ -64,13 +71,13 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/boton_borrar"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp"
+        android:text="@string/boton_borrar"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:text="Button" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

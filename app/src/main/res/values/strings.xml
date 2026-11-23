@@ -24,6 +24,7 @@
     <string name="boton_cancelar">Cancelar</string>
     <string name="boton_guardar">Guardar</string>
     <string name="anadir_juego">Añadir juego</string>
+    <string name="boton_borrar">Borrar</string>
 
 
 </resources>

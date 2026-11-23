@@ -24,7 +24,6 @@
     android:layout_height="wrap_content"
     android:layout_margin="16dp"
     android:contentDescription="@string/anadir_juego"
-
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="@+id/lista_juegos"
     app:srcCompat="@drawable/ic_anadir" />

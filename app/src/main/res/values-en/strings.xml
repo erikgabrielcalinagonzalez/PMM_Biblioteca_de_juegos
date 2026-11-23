@@ -22,7 +22,8 @@
     <string name="form_chek_jugado">Played</string>
     <string name="boton_cancelar">Cancel</string>
     <string name="boton_guardar">Register</string>
-    <string name="anadir_juego">Add game</string>>
+    <string name="anadir_juego">Add game</string>
+    <string name="boton_borrar">Delete</string>>
 
 
 
